@@ -1,0 +1,40 @@
+/*cach khai bao bien trong Css*/
+:root
+{   /*cach dat bien can 2 dau "--" de nhan biet*/
+    /*trong Css ket thuc mot statement can dau ";"*/
+    --white-color: #fff;
+    --black-color : #000;
+    --text-color : #333;
+}
+*{ /*xai dau "*" no se ap dung cho tat ca cac file Css base*/
+    /*inherit ke thua tu the html*/
+    box-sizing: inherit;
+}
+html 
+{   /*default 100% font-size = 16px*/
+    /*hack su dung font-size = 62.5% = 10px*/
+    /*vay 1.2rem = 12px */
+    font-size: 62.5%;
+    /*rem la don vi relative theo the html*/
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+.grid
+{   /*responsive web*/
+    /*voi man hinh voi 1200px hien thi day du*/
+    /*nho hon 1200px thi giam kich thuoc = man hinh*/
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+.grid__full-width
+{
+    width: 100%;
+}
+.grid__row
+{   /*su dung class = 'grip__row'*/
+    /*de bien nhung item nam tren 1 hang -flex va xuong hang - wrap*/
+    display: flex;
+    flex-wrap: wrap;
+}
